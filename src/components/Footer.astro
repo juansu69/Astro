@@ -1,0 +1,31 @@
+---
+
+//const platform = "github";
+//const username = "withastro";
+
+//const platformx = "x";
+//const usernamex = "juansu69";
+
+//const platformli = "linkedin";
+//const usernameli = "in/juansuarez-50045b25";
+
+import Social from "./Social.astro";
+---
+
+<style>
+    footer{
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+<footer>
+    <!-- 
+    <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <p>check for my last updates on <a href={`https://www.${platformx}.com/${usernamex}`}>{platformx}</a>!</p>
+    <p>check for my profile on <a href={`https://www.${platformli}.com/${usernameli}`}>{platformli}</a>!</p>
+    -->
+    <Social platform="github" username="withastro"/>
+    <Social platform="X" username="juansu69" />
+    <Social platform="linkedin" username="in/juansuarez-50045b25" />
+</footer>
